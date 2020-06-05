@@ -10,7 +10,7 @@ package Service;
 /**
  * Description of Filters.
  * 
- * @author aleip
+ * @author flavi
  */
 public class Filters {
 	// Start of user code (user defined attributes for Filters)
