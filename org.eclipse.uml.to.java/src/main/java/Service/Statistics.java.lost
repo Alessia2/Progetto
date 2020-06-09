@@ -1,9 +1,0 @@
-
-Thu Jun 04 20:01:22 CEST 2020
-================================================================================
-Start of user code for method getValue
-		Integer getValue = Integer.valueOf(0);
-		return getValue;
-		// End of user code
-Start of user code for method avarage
-		// End of user code
