@@ -5,6 +5,8 @@ public class Post {
 	private int id;
 	private String message;
 	
+	public Post() {};
+	
 	public Post(int id, String message) {
 		this.id=id;
 		this.message=message;

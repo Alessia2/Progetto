@@ -1,10 +1,11 @@
 package Progetto.Model;
 
-public class Hashtag {
+public class Hashtag extends Post {
 	
 	private String text;
 	
 	public Hashtag() {
+		super();
 		this.text=null;
 	}
 	
