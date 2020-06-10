@@ -1,20 +1,36 @@
 package Progetto.Model;
 
+import java.util.HashMap;
+
 public class Hashtag extends Post {
 	
-	private String text;
+	private HashMap<String,Integer> hashtag;
 	
 	public Hashtag() {
 		super();
-		this.text=null;
+		hashtag=new HashMap<>();
 	}
-	
-	public String getText() {
-		return this.text;
-	}
-	
-	public void setText(String text) {
-		this.text=text;
+
+	public void conta(Post post,String code ) {
+		String msg=post.getMessage();
+		for(int i=0;i<msg.length();i++)
+		{
+			char l=msg.charAt(i);
+			if(l=='#')
+			{
+				i++;//per non prendere#?!
+				while(l!=' '||l!='\n')
+				code=msg.substring(i);
+			
+			}
+		}
+		if(hashtag.containsKey(code))
+		{
+			int value=hashtag.get(code)+1;
+			hashtag.put(code, value);
+		}
+		else
+			hashtag.put(code, 1);
 	}
 
 }

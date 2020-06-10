@@ -1,21 +1,18 @@
 package Progetto.Model;
 
+import java.util.HashMap;
+
+
 public class Emoticon extends Post {
 	
-	private String code;
+	private HashMap<String,Integer> emoticon;
 	
 	public Emoticon() {
 		super();
-		this.code=null;
+		emoticon=new HashMap<>();
 	}
 	
-	public String getCode() {
-		return this.code;
-	}
-	
-	public void setCode(String code) {
-		this.code=code;
-	}
+
 	public void conta(Post post,String code ) {
 		String msg=post.getMessage();
 		for(int i=0;i<msg.length();i++)
@@ -28,6 +25,13 @@ public class Emoticon extends Post {
 			
 			}
 		}
+		if(emoticon.containsKey(code))
+		{
+			int value=emoticon.get(code)+1;
+			emoticon.put(code, value);
+		}
+		else
+			emoticon.put(code, 1);
 	}
 
 }
