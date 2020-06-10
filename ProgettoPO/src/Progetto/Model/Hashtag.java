@@ -11,7 +11,7 @@ public class Hashtag extends Post {
 		hashtag=new HashMap<>();
 	}
 
-	public void conta(Post post,String code ) {
+	public void count(Post post,String code ) {
 		String msg=post.getMessage();
 		for(int i=0;i<msg.length();i++)
 		{

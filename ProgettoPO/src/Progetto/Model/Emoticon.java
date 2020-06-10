@@ -13,7 +13,7 @@ public class Emoticon extends Post {
 	}
 	
 
-	public void conta(Post post,String code ) {
+	public void count(Post post,String code ) {
 		String msg=post.getMessage();
 		for(int i=0;i<msg.length();i++)
 		{
@@ -21,7 +21,7 @@ public class Emoticon extends Post {
 			if(l=='U')
 			{
 				while(l!=' '||l!='\n')
-				code=msg.substring(i+1);
+				code=msg.substring(i);
 			
 			}
 		}
