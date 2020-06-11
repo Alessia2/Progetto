@@ -1,7 +1,6 @@
-package Progetto.Model;
+package application.model;
 
 public class Post {
-	
 	private int id;
 	private String message;
 	

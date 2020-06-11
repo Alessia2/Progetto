@@ -1,4 +1,4 @@
-package Progetto.Service;
+package application.service;
 
 public class Statistics {
 

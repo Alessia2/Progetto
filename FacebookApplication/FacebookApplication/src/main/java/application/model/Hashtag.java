@@ -1,4 +1,4 @@
-package Progetto.Model;
+package application.model;
 
 import java.util.HashMap;
 
@@ -10,18 +10,19 @@ public class Hashtag extends Post {
 		super();
 		hashtag=new HashMap<>();
 	}
-
-	public void count(Post post,String code ) {
+	
+	//verifica se un hashtag è presente nell hashmap
+	//se non c'è lo inserisce,se è gia presente modifica il valore
+	public void count(Post post,String code) {
 		String msg=post.getMessage();
 		for(int i=0;i<msg.length();i++)
 		{
 			char l=msg.charAt(i);
-			if(l=='#')
+			if(l == '#')
 			{
-				i++;//per non prendere#?!
+				i++;//per non prendere #
 				while(l!=' '||l!='\n')
-				code=msg.substring(i);
-			
+					code=msg.substring(i);
 			}
 		}
 		if(hashtag.containsKey(code))
@@ -32,5 +33,9 @@ public class Hashtag extends Post {
 		else
 			hashtag.put(code, 1);
 	}
+
+	
+
+
 
 }
