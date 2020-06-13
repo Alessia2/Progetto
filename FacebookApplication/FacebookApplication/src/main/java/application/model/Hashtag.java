@@ -1,7 +1,12 @@
 package application.model;
 
 import java.util.HashMap;
-
+/**
+ * class that describes the hashtags
+ * @author Flavia Gioiello
+ * @author Alessia Castagnolo
+ *
+ */
 public class Hashtag extends Post {
 	
 	private HashMap<String,Integer> hashtag;

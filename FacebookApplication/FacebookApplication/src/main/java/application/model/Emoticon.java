@@ -2,6 +2,12 @@ package application.model;
 
 import java.util.HashMap;
 
+/**
+ * class that describes the emoticons
+ * @author Flavai Gioiello
+ * @author Alessia Castagnolo
+ *
+ */
 public class Emoticon extends Post {
 	
 	private HashMap<String,Integer> emoticon;
@@ -18,7 +24,7 @@ public class Emoticon extends Post {
 		String msg=post.getMessage();
 		for(int i=0;i<msg.length();i++) {
 			char l=msg.charAt(i);
-			if(l=='U')
+			if(l=='U' || l=='+')
 			{
 				while(l!=' '|| l!='\n')
 					code=msg.substring(i);
