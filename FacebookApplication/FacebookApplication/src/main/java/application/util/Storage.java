@@ -51,6 +51,7 @@ public class Storage {
 		metadata.add(new Metadata("id", "String", "identificator"));
 		metadata.add(new Metadata("message", "String", "description of the post"));
 		return metadata;
+
 	}
 
 }
