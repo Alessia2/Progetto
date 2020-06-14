@@ -25,7 +25,7 @@ public class Storage {
 	 * @param str, url per fare il parsing
 	 * @return post, array di post
 	 */
-	public static ArrayList<Post> fill_post(String str) throws MalformedURLException, IOException, JSONException {// lavora con variabili statiche
+	public static void fill_post(String str) throws MalformedURLException, IOException, JSONException {// lavora con variabili statiche
 		
 		try {
 			post = Parsing.getPost(str);
@@ -39,9 +39,15 @@ public class Storage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+	}
+	
+	/** 
+	 * @return array post
+	 */
+	
+	public static ArrayList<Post> get_post(){
 		return post;
-		
-		
 	}
 	/**
 	 * crea array di metadata
