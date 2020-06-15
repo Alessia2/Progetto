@@ -48,7 +48,6 @@ public class Parsing  {
 		for(int i=0; i<array.length(); i++) {
 			JSONObject o = object.getJSONArray("data").getJSONObject(i); // prende l'elemento in posizione i dell'array data e lo mette in o
 			ObjectMapper m = new ObjectMapper();
-			m.findAndRegisterModules(); //registra i post in ordine di data
 			Post p = m.readValue(o.toString(), Post.class);
 			post.add(p);
 		}
