@@ -35,6 +35,7 @@ public class Statistics  {
 			for(Entry<String, Integer> entry : h.entrySet()) {
 				if (Objects.equals(max, entry.getValue())) {
 					key= entry.getKey();
+					
 				}
 			}
 		}
