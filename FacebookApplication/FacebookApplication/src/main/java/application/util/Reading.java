@@ -26,6 +26,7 @@ public class Reading {
 				String s = input.readLine();
 				while(s != null) {
 					str += s;
+					s=input.readLine();
 				}
 			
 			
