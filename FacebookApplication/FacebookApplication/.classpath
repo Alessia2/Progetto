@@ -29,9 +29,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/aleip/Downloads/java-json.jar"/>
-	<classpathentry kind="lib" path="C:/Users/aleip/Downloads/jackson-core-2.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/aleip/Downloads/jackson-annotations-2.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/aleip/Downloads/jackson-databind-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/flavi/Downloads/java-json.jar"/>
+	<classpathentry kind="lib" path="C:/Users/flavi/Downloads/jackson-databind-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/flavi/Downloads/jackson-core-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/flavi/Downloads/jackson-annotations-2.11.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

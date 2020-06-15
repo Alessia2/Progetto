@@ -56,6 +56,7 @@ public class Storage {
 	public static ArrayList<Metadata> fill_metadata(){
 		metadata.add(new Metadata("id", "String", "identificator"));
 		metadata.add(new Metadata("message", "String", "description of the post"));
+		metadata.add(new Metadata("created time", "String", "when it was published"));
 		return metadata;
 
 		
