@@ -36,6 +36,7 @@ public class Hashtag extends Post {
 				if(msg.charAt(i) == '#')
 				{
 						code=msg.substring(i);
+						
 				}
 			}
 			if(hashtag.containsKey(code))
