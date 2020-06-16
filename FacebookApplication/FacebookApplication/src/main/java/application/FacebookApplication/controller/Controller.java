@@ -4,6 +4,7 @@ package application.FacebookApplication.controller;
 
 import java.util.ArrayList;
 
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -37,7 +38,7 @@ public class Controller {
 		return Storage.fill_metadata();
 	}
 	@GetMapping("/stat")
-	public String Statistics() {
+	public int Statistics() {
 		return application.service.Statistics.max_hashtag();
 	}
 

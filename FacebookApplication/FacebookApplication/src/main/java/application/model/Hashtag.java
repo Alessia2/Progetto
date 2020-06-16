@@ -10,13 +10,10 @@ import application.util.Storage;
  * @author Alessia Castagnolo
  *
  */
-public class Hashtag extends Post {
-	
-	public static HashMap<String,Integer> hashtag;
+public class Hashtag extends Post { 
 	
 	public Hashtag() {
 		super();
-		hashtag=new HashMap<>();
 	}
 	
 	/**
@@ -25,36 +22,33 @@ public class Hashtag extends Post {
 	 * @return 
 	 */
 	public static HashMap<String, Integer> count() {
+		HashMap<String,Integer> hashtag=new HashMap<>();
 		ArrayList<Post> array;
 		array=Storage.get_post();
-		String code=null;
 		for(int k=0;k<array.size();k++) {
-			String msg=array.get(k).getMessage();
-			for(int i=0;i<msg.length();i++)
-			{
-				
-				if(msg.charAt(i) == '#')
-				{
-						code=msg.substring(i);
-						
+			if(!array.get(k).getMessage().isEmpty()) {
+				String[] msg=array.get(k).getMessage().split("\n");//separa il messaggio a ogni #
+				for(int i=0;i<msg.length;i++) {
+					
+					if(msg[i].charAt(0)=='#' ) {
+						String[] hash=msg[i].split(" ");
+						for(int j=0;j<hash.length;j++) {
+							System.out.println(hash[j]);
+							if(hashtag.containsKey(hash[j]))
+							{
+								int value=hashtag.get(hash[j])+1;
+								hashtag.put(hash[j], value);
+							}
+							else
+								hashtag.put(hash[j], 1);
+							}	
+						System.out.println(hashtag.toString());
+						}	
 				}
-			}
-			if(hashtag.containsKey(code))
-			{
-				int value=hashtag.get(code)+1;
-				hashtag.put(code, value);
-			}
-			else
-				hashtag.put(code, 1);
 			
+			}
 		}
+
 		return hashtag;
 	}
-		
-	
-
-	
-
-
-
 }
