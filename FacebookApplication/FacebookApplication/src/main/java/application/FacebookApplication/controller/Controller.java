@@ -36,5 +36,9 @@ public class Controller {
 	public ArrayList<Metadata> getArrayMetadata(){
 		return Storage.fill_metadata();
 	}
+	@GetMapping("/stat")
+	public String Statistics() {
+		return application.service.Statistics.max_hashtag();
+	}
 
 }

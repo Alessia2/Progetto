@@ -12,7 +12,7 @@ import application.util.Storage;
  */
 public class Hashtag extends Post {
 	
-	private HashMap<String,Integer> hashtag;
+	public static HashMap<String,Integer> hashtag;
 	
 	public Hashtag() {
 		super();
@@ -22,19 +22,19 @@ public class Hashtag extends Post {
 	/**
 	 * metodo che riempie l'hashmap di hashtag con il nome come chiave e qunate volte appare come valore
 	 * @param array,array di post
+	 * @return 
 	 */
-	public void count(ArrayList<Post> array) {
+	public static HashMap<String, Integer> count() {
+		ArrayList<Post> array;
 		array=Storage.get_post();
 		String code=null;
 		for(int k=0;k<array.size();k++) {
 			String msg=array.get(k).getMessage();
 			for(int i=0;i<msg.length();i++)
 			{
-				char l=msg.charAt(i);
-				if(l == '#')
+				
+				if(msg.charAt(i) == '#')
 				{
-					i++;//per non prendere #
-					while(l!=' '||l!='\n')
 						code=msg.substring(i);
 				}
 			}
@@ -45,12 +45,12 @@ public class Hashtag extends Post {
 			}
 			else
 				hashtag.put(code, 1);
+			
 		}
+		return hashtag;
 	}
 		
-	public HashMap<String,Integer> getH(){
-		return this.hashtag;
-	}
+	
 
 	
 
