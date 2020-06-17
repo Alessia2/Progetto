@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import application.Exception.HashtagNotFoundException;
 import application.model.Metadata;
 import application.model.Post;
 import application.util.Storage;
@@ -51,7 +53,13 @@ public class Controller {
 	}
 	@GetMapping("/filhash")
 	public ArrayList<Post> filterHashtag(@RequestParam(name="param1")String param1) {
-		return Filtershash.contain(param1);
+		try {
+			return Filtershash.contain(param1);
+		} catch (HashtagNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 	
 	@GetMapping("/filemo")
