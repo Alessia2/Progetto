@@ -25,7 +25,6 @@ package application.service;
 			
 			return filteredPost;
 			
-		
 		}
 
 
