@@ -33,7 +33,7 @@ public class Hashtag extends Post {
 					if(msg[i].charAt(0)=='#' ) {
 						String[] hash=msg[i].split(" ");
 						for(int j=0;j<hash.length;j++) {
-							System.out.println(hash[j]);
+							
 							if(hashtag.containsKey(hash[j]))
 							{
 								int value=hashtag.get(hash[j])+1;
@@ -42,7 +42,7 @@ public class Hashtag extends Post {
 							else
 								hashtag.put(hash[j], 1);
 							}	
-						System.out.println(hashtag.toString());
+						
 						}	
 				}
 			
