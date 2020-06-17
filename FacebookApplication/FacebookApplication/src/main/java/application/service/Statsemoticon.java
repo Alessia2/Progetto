@@ -8,7 +8,7 @@ import java.util.Vector;
 import java.util.Map.Entry;
 
 import application.model.Emoticon;
-import application.model.Hashtag;
+
 
 public class Statsemoticon {
 
@@ -28,9 +28,9 @@ public class Statsemoticon {
 
 	}
 
-	public String max_keye() {
+	public String max_e() {
 		HashMap<String, Integer> e;
-		e = Hashtag.count();
+		e = Emoticon.count();
 
 		Vector<String> key = new Vector<String>();
 		int MAX = max_emoticon();
@@ -46,7 +46,7 @@ public class Statsemoticon {
 
 	public static int min_emoticon() {
 		HashMap<String, Integer> e;
-		e = Hashtag.count();
+		e = Emoticon.count();
 		int min = max_emoticon();
 		Collection<Integer> values = e.values();
 		Iterator<Integer> i = values.iterator();
@@ -58,7 +58,7 @@ public class Statsemoticon {
 		return min;
 	}
 
-	public String min_keye() {
+	public String min_e() {
 		HashMap<String, Integer> e;
 		e = Emoticon.count();
 		Vector<String> key = new Vector<String>();

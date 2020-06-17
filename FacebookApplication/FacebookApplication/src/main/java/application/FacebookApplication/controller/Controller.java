@@ -44,7 +44,7 @@ public class Controller {
 	@GetMapping("/statsemoticons")
 	public String Statsemoticons() {
 		Statsemoticon s2= new Statsemoticon();
-		return s2.max_keye()+Statsemoticon.max_emoticon()+"\n"+s2.min_keye()+Statsemoticon.min_emoticon();
+		return s2.max_e()+Statsemoticon.max_emoticon()+"\n"+s2.min_e()+Statsemoticon.min_emoticon();
 	}
 
 }
