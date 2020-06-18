@@ -2,15 +2,18 @@ package application.FacebookApplication.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.HashMap;
+
+import application.model.Hashtag;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import application.Exception.HashtagNotFoundException;
-import application.service.Filtershash;
-
-class ExceptionTest {
-	private String text;
+class NullTest {
+	
+	private HashMap<String,Integer> h=Hashtag.count();
+	
 
 	@BeforeEach
 	void setUp() throws Exception {
@@ -22,7 +25,9 @@ class ExceptionTest {
 
 	@Test
 	void test() {
-		assertThrows(HashtagNotFoundException.class,()->Filtershash.contain(text));
+		
+		assertNotNull(h);
 	}
+
 
 }

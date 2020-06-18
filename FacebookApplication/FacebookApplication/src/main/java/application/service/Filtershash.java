@@ -24,7 +24,7 @@ public class Filtershash {
 					
 				}
 			} else
-				new HashtagNotFoundException();
+				throw new HashtagNotFoundException();
 
 		
 
