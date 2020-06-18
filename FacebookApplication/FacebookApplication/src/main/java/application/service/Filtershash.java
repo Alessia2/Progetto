@@ -28,7 +28,8 @@ public class Filtershash {
 					
 				}
 			} else
-				throw new HashtagNotFoundException();	
+				throw new HashtagNotFoundException();
+			
 		return filteredPost;
 
 	}
