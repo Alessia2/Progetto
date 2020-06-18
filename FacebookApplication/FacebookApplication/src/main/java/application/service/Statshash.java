@@ -17,6 +17,10 @@ import application.model.Hashtag;
 public class Statshash {
 
 
+	/**
+	 * metodo che cerca la/gli hashtag più usato/i
+	 * @return quante volte è stato usto/i
+	 */
 	public static int max_hashtag() {
 		HashMap<String, Integer> h;
 		h = Hashtag.count();
@@ -33,6 +37,10 @@ public class Statshash {
 
 	}
 
+	/**
+	 * metodo che cerca la/gli hashtag più usato/i  nell'hashmap
+	 * @return stampa la/gli hashtag più usato/i
+	 */
 	public String max_key() {
 		HashMap<String, Integer> h;
 		h = Hashtag.count();
@@ -49,6 +57,10 @@ public class Statshash {
 		return "Gli hashtags più usati sono: " + key.toString() + "\nUsati: ";
 	}
 
+	/**
+	 * metodo che cerca la/gli hashtag meno usato/i
+	 * @return quante volte è stato usto/i
+	 */
 	public static int min_hashtag() {
 		HashMap<String, Integer> h;
 		h = Hashtag.count();
@@ -63,6 +75,10 @@ public class Statshash {
 		return min;
 	}
 
+	/**
+	 * metodo che cerca la/gli hashtag meno usato/i  nell'hashmap
+	 * @return stampa la/gli hashtag meno usato/i
+	 */
 	public String min_key() {
 		HashMap<String, Integer> h;
 		h = Hashtag.count();

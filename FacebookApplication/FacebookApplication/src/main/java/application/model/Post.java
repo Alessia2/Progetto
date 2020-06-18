@@ -11,7 +11,12 @@ public class Post {
 	private String message;
 	private String created_time;
 	
-	
+	/** 
+	 * costruttore della classe
+	 * @param id;id del post
+	 * @param message,messaggio del post
+	 * @param created_time, quando è stato creato il post
+	 */
 	public Post() {
 		this.id=null;
 		this.message=null;
@@ -21,40 +26,33 @@ public class Post {
 	public String getCreated_time() {
 		return created_time;
 	}
-
+	
+	/**
+	 * 
+	 * metodi getter e setter
+	 */
 	public void setCreated_time(String created_time) {
 		this.created_time = created_time;
 	}
 
-	/**
-	 * 
-	 * @return the id of the post
-	 */
+	
 	public String getId() {
 		return id;
 	}
 	
-	/**
-	 * 
-	 * @param id,the id to set
-	 */
+	
 	public void setId(String id) {
 		this.id=id;
 	}
 	
-	/**
-	 * 
-	 * @return the message of the post
-	 */
+	
 	public String getMessage() {
 		return message;
 	}
-	/**
-	 * 
-	 * @param message,the message to set
-	 */
+	
 	public void setMessage(String message) {
 		this.message=message;
 	}
 
 }
+

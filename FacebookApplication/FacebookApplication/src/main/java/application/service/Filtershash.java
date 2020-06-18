@@ -9,9 +9,13 @@ import application.model.Post;
 import application.util.Storage;
 
 public class Filtershash {
-
 	
-
+	/**
+	 * metodo che cerca i post in cui è presente l'hashtag passato come parametro
+	 * @param text,hashtag da cercare
+	 * @return tutti i post contenenti l'hashtag passato come parametro
+	 * @throws HashtagNotFoundException
+	 */
 	public static ArrayList<Post> contain(String text) throws HashtagNotFoundException {
 		ArrayList<Post> filteredPost = new ArrayList<Post>();
 		ArrayList<Post> post = Storage.get_post();
@@ -24,11 +28,7 @@ public class Filtershash {
 					
 				}
 			} else
-				throw new HashtagNotFoundException();
-
-		
-
-	
+				throw new HashtagNotFoundException();	
 		return filteredPost;
 
 	}

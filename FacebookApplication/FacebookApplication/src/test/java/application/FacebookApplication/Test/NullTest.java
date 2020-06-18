@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.HashMap;
 
+import application.model.Emoticon;
 import application.model.Hashtag;
 
 import org.junit.jupiter.api.AfterEach;
@@ -13,6 +14,7 @@ import org.junit.jupiter.api.Test;
 class NullTest {
 	
 	private HashMap<String,Integer> h=Hashtag.count();
+	private HashMap<String,Integer> e =Emoticon.count();
 	
 
 	@BeforeEach
@@ -27,7 +29,9 @@ class NullTest {
 	void test() {
 		
 		assertNotNull(h);
+		assertNotNull(e);
 	}
 
 
 }
+

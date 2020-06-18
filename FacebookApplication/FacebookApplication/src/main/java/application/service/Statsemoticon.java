@@ -12,11 +12,14 @@ import application.model.Emoticon;
 
 public class Statsemoticon {
 
+	/**
+	 * metodo che cerca la/le emoticon più usata/e 
+	 * @return quante volte è stata usta/e
+	 */
 	public static int max_emoticon() {
 		HashMap<String, Integer> e;
 		e = Emoticon.count();
 		int max = 0;
-
 		Collection<Integer> values = e.values();
 		Iterator<Integer> i = values.iterator();
 		while (i.hasNext()) {
@@ -25,9 +28,12 @@ public class Statsemoticon {
 				max = tmp;
 		}
 		return max;
-
 	}
 
+	/**
+	 * metodo che cerca la/le emoticon più usata/e  nell'hashmap
+	 * @return stampa la/le emoticon più usata/e
+	 */
 	public String max_e() {
 		HashMap<String, Integer> e;
 		e = Emoticon.count();
@@ -44,6 +50,10 @@ public class Statsemoticon {
 		return "Le emoticons più usate sono: " + key.toString() + "\nUsate: ";
 	}
 
+	/**
+	 * metodo che cerca la/le emoticon meno usata/e 
+	 * @return quante volte è stata usta/e
+	 */
 	public static int min_emoticon() {
 		HashMap<String, Integer> e;
 		e = Emoticon.count();
@@ -58,6 +68,10 @@ public class Statsemoticon {
 		return min;
 	}
 
+	/**
+	 * metodo che cerca la/le emoticon meno usata/e  nell'hashmap
+	 * @return stampa la/le emoticon meno usata/e
+	 */
 	public String min_e() {
 		HashMap<String, Integer> e;
 		e = Emoticon.count();

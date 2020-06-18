@@ -53,6 +53,9 @@ public class Metadata {
 		this.property = property;
 	}
 	
+	/**
+	 * override del metodo toString()
+	 */
 	public String toString() {
 		return this.getName()+": "+this.getProperty()+"\n"+this.getType();
 	}

@@ -12,6 +12,9 @@ import application.util.Storage;
  */
 public class Hashtag extends Post { 
 	
+	/**
+	 * costruttore della classe
+	 */
 	public Hashtag() {
 		super();
 	}
