@@ -63,4 +63,27 @@ Per le emoticons: copiare l'emoticon da cercare (ad esempio 🐝).
 ### Test
 <img src="https://github.com/Alessia2/Progetto/blob/master/UML/test.jpg" width="600px" height="420px">
 
+---
+
+## Diagramma delle sequenze
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/Sequence%20Diagram.jpg" width="600px" height="420px">
+
+---
+
+## Software utilizzati
+* <a href="https://www.eclipse.org/">Eclipse</a> - ambiente di sviluppo 
+* <a href="http://www.umldesigner.org/">UML Designer</a> - software per la realizzazione dei diagrammi UML
+* <a href="https://maven.apache.org/">Maven</a> - software di gestione di progetti
+* <a href="https://spring.io/projects/spring-boot">Spring Boot</a> - framework per sviluppo di applicazioni in Java
+
+---
+
+## Autori
+<ul type="disc">
+ <li><a href="https://github.com/flaviagioiello">Flavia Gioiello</a></li>
+ <li><a href="https://github.com/Alessia2">Alessia Castagnolo</a></li>
+</ul>
+
+
+
 
