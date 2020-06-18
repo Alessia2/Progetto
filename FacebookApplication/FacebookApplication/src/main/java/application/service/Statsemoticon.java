@@ -13,7 +13,7 @@ import application.model.Metadata;
 
 
 public class Statsemoticon implements Stats {
-	public static ArrayList<Metadata> metadata = new ArrayList<Metadata>();
+
 	/**
 	 * metodo che cerca la/le emoticon più usata/e 
 	 * @return quante volte è stata usta/e
