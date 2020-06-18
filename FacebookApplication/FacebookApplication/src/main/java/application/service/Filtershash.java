@@ -16,7 +16,6 @@ public class Filtershash {
 		ArrayList<Post> filteredPost = new ArrayList<Post>();
 		ArrayList<Post> post = Storage.get_post();
 		HashMap<String, Integer> h = Hashtag.count();
-		try {
 			if (h.containsKey(text)) {
 				for (int i = 0; i < post.size(); i++) {
 					String msg = post.get(i).getMessage();
@@ -25,12 +24,11 @@ public class Filtershash {
 					
 				}
 			} else
-				throw (new HashtagNotFoundException() );
+				new HashtagNotFoundException();
 
-		} catch (HashtagNotFoundException e) {
-			e.printStackTrace();
+		
 
-		}
+	
 		return filteredPost;
 
 	}
