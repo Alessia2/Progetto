@@ -10,3 +10,4 @@ Nel dettaglio, l'applicazione permette di:
 - [x] Ottenere statistiche su emoticons(emoticons più e meno usati e quante volte vengono usati, totale degli emoticons usati)
 - [x] Filtri dei post in base alla presenza di un determinato hashtag/emoticon o entrambi
 ### Diagramma dei casi d'uso
+![Logo] (https://github.com/Alessia2/Progetto/blob/master/UML/NewModel%20Use%20Case%20Diagram.jpg)
