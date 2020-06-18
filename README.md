@@ -20,5 +20,14 @@ Successivamente, dopo aver scaricato i software necessari per l'utilizzo (Eclips
 Sostituire poi nel link già presente della classe Facebook Application (riga 24) il proprio token di accesso e id della pagina.
 Infine cliccare su run as Spring Boot App e aprire postman. Da quì si potranno effettuare tutte le chiamate precedute da http://localhost:8080.
 ### Richieste possibili
+Tipo | Rotta | Descrizione
+---- | ---- | ----
+GET | /post | Richiesta elenco dei post sulla pagina
+GET | /metadata | Richiesta elenco dei metadati
+GET | /statshash | Statistiche sugli hashtag
+GET | /statsemoticons | Statistiche sulle emoticons
+GET | /filhash | Filtri in base all'hashtag
+GET | /filemo | Filtri in base all'emoticon
+GET | /FilterDouble | Filtri per emoticons e hashtag
 
 
