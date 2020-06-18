@@ -29,5 +29,13 @@ GET | /statsemoticons | Statistiche sulle emoticons
 GET | /filhash | Filtri in base all'hashtag
 GET | /filemo | Filtri in base all'emoticon
 GET | /FilterDouble | Filtri per emoticons e hashtag
-
+### Filtri possibili
+Nome | Operatore | Descrizione
+---- | ---- | ----
+hashtag | /filhash?param1=hashtag | Post con hashtag passato
+emoticon | /filemo?param1=emoticon | Post con emoticon passato
+hashtag, emoticon | /FilterDouble?param1=hashtag&param2=emoticon | Post con emoticon e hashtag passati
+##### NOTA BENE
+Per hashtag scrivere: "#" seguito dalla parola dell'hashtag.
+Per le emoticons: copiare l'emoticon da cercare (ad esempio 🐝).
 
