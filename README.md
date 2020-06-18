@@ -54,4 +54,13 @@ Per le emoticons: copiare l'emoticon da cercare (ad esempio 🐝).
 ### Model
 <img src="https://github.com/Alessia2/Progetto/blob/master/UML/application.model.jpg" width="600px" height="420px">
 
+### Util
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/application.util.jpg" width="600px" height="420px">
+
+### Exception
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/application.exception.jpg" width="600px" height="420px">
+
+### Test
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/test.jpg" width="600px" height="420px">
+
 
