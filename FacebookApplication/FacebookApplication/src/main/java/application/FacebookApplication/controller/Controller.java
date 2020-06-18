@@ -11,6 +11,7 @@ import application.Exception.HashtagNotFoundException;
 import application.model.Metadata;
 import application.model.Post;
 import application.util.Storage;
+import application.service.FilterDouble;
 import application.service.Filtersemoticon;
 import application.service.Filtershash;
 import application.service.Statsemoticon;
@@ -50,7 +51,7 @@ public class Controller {
 	@GetMapping("/statshash")
 	public String Statshash() {
 		Statshash s1= new Statshash();
-		return s1.max_key()+Statshash.max_hashtag()+"\n"+s1.min_key()+Statshash.min_hashtag()+"\n"+s1.tot();
+		return s1.max_key()+Statshash.max_hashtag()+"\n"+s1.min_key()+Statshash.min_hashtag()+"\n"+s1.tot()+"\n"+s1.numH();
 		
 	}
 	/**
@@ -60,7 +61,7 @@ public class Controller {
 	@GetMapping("/statsemoticons")
 	public String Statsemoticons() {
 		Statsemoticon s2= new Statsemoticon();
-		return s2.max_key()+Statsemoticon.max_emoticon()+"\n"+s2.min_key()+Statsemoticon.min_emoticon()+"\n"+s2.tot();
+		return s2.max_key()+Statsemoticon.max_emoticon()+"\n"+s2.min_key()+Statsemoticon.min_emoticon()+"\n"+s2.tot()+"\n"+s2.numE();
 	}
 	
 	/**
@@ -88,6 +89,22 @@ public class Controller {
 		try {
 			return Filtersemoticon.contain(param1);
 		} catch (EmoticonNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+	/**
+	 * 
+	 * @param param1,hashtag secondo il quale si vuole filtrare
+	 * @param param2,emoticon secondo la quale si vuole filtrare
+	 * @return tutti i post che contengono  l'hashtag e l'emoticon passata
+	 */
+	@GetMapping("/FilterDouble")
+	public ArrayList<Post> FilDoub(@RequestParam(name="param1")String param1, @RequestParam(name="param2")String param2){
+		try {
+			return FilterDouble.FilDouble(param1,param2);
+		} catch (EmoticonNotFoundException | HashtagNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

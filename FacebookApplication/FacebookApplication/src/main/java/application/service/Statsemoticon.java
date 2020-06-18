@@ -89,6 +89,10 @@ public class Statsemoticon implements Stats {
 		return "Le emoticons meno usate sono: " + key.toString() + "\nUsate: ";
 		
 	}
+	
+	/**
+	 * @return  tot,emoticon usate in totale
+	 */
 	public String tot() {
 		HashMap<String, Integer> e=Emoticon.count();
 		int tot=0;
@@ -99,4 +103,12 @@ public class Statsemoticon implements Stats {
 		}
 		return "Totale emoticon usate: "+tot;
 	}
+	
+	/** 
+	 * @return tutte le emoticon usate e quante volte sono state usate
+	 */
+	 public String numE() {
+		 HashMap<String, Integer> e=Emoticon.count();
+		 return e.toString();
+	 }
 }

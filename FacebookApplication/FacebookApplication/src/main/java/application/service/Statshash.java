@@ -96,6 +96,10 @@ public class Statshash implements Stats {
 		return "Gli hashtags meno usati sono: " + key.toString() + "\nUsati: ";
 		
 	}
+	
+	/**
+	 * @return tot, totale degli hashtag usati
+	 */
 	public String tot() {
 		HashMap<String, Integer> h=Hashtag.count();
 		int tot=0;
@@ -106,5 +110,14 @@ public class Statshash implements Stats {
 			
 		}
 		return "Totale hashtag usati: " + tot;
+	}
+	
+	/**
+	 * 
+	 * @return tutti gli hashtag usati e quante volte sono state usate
+	 */
+	public String numH() {
+		HashMap<String,Integer> hashtag=Hashtag.count();
+		return hashtag.toString();
 	}
 }
