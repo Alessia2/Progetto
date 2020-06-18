@@ -39,3 +39,19 @@ hashtag, emoticon | /FilterDouble?param1=hashtag&param2=emoticon | Post con emot
 Per hashtag scrivere: "#" seguito dalla parola dell'hashtag.
 Per le emoticons: copiare l'emoticon da cercare (ad esempio 🐝).
 
+---
+
+## Diagramma delle classi
+### Package
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/Class%20Diagram%20PACKAGE.jpg" width="600px" height="420px">
+
+### Application
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/application.FacebookApplication.jpg" width="600px" height="420px"> 
+
+### Service
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/application.service.jpg" width="600px" height="420px">
+
+### Model
+<img src="https://github.com/Alessia2/Progetto/blob/master/UML/application.model.jpg" width="600px" height="420px">
+
+
