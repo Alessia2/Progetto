@@ -60,7 +60,7 @@ public class Controller {
 	@GetMapping("/statsemoticons")
 	public String Statsemoticons() {
 		Statsemoticon s2= new Statsemoticon();
-		return s2.max_e()+Statsemoticon.max_emoticon()+"\n"+s2.min_e()+Statsemoticon.min_emoticon();
+		return s2.max_key()+Statsemoticon.max_emoticon()+"\n"+s2.min_key()+Statsemoticon.min_emoticon();
 	}
 	
 	/**

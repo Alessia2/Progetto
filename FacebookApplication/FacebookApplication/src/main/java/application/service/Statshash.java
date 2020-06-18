@@ -14,7 +14,7 @@ import java.util.Vector;
 import application.model.Hashtag;
 
 
-public class Statshash {
+public class Statshash implements Stats {
 
 
 	/**

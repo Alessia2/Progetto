@@ -16,7 +16,7 @@ public class Filtersemoticon {
 	 * @return tutti i post contenenti l'emoticon pasata come parametro
 	 * @throws EmoticonNotFoundException
 	 */
-	public static ArrayList<Post> contain(String emo) throws EmoticonNotFoundException  {
+	public static  ArrayList<Post> contain(String emo) throws EmoticonNotFoundException  {
 		ArrayList<Post> post=Storage.get_post();
 		ArrayList<Post> filteredPost=new ArrayList<Post>();
 		HashMap<String,Integer> e=Emoticon.count();

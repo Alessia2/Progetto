@@ -10,7 +10,7 @@ import java.util.Map.Entry;
 import application.model.Emoticon;
 
 
-public class Statsemoticon {
+public class Statsemoticon implements Stats {
 
 	/**
 	 * metodo che cerca la/le emoticon più usata/e 
@@ -34,7 +34,7 @@ public class Statsemoticon {
 	 * metodo che cerca la/le emoticon più usata/e  nell'hashmap
 	 * @return stampa la/le emoticon più usata/e
 	 */
-	public String max_e() {
+	public String max_key() {
 		HashMap<String, Integer> e;
 		e = Emoticon.count();
 
@@ -72,7 +72,7 @@ public class Statsemoticon {
 	 * metodo che cerca la/le emoticon meno usata/e  nell'hashmap
 	 * @return stampa la/le emoticon meno usata/e
 	 */
-	public String min_e() {
+	public String min_key() {
 		HashMap<String, Integer> e;
 		e = Emoticon.count();
 		Vector<String> key = new Vector<String>();
