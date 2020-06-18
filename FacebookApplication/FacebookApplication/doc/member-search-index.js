@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"application.service","c":"Statshash","l":"max_hashtag()"},{"p":"application.service","c":"Statshash","l":"max_key()"},{"p":"application.service","c":"Statshash","l":"min_hashtag()"},{"p":"application.service","c":"Statshash","l":"min_key()"},{"p":"application.service","c":"Statshash","l":"Statshash()","url":"%3Cinit%3E()"}]

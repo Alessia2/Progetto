@@ -13,9 +13,7 @@ public class Post {
 	
 	/** 
 	 * costruttore della classe
-	 * @param id;id del post
-	 * @param message,messaggio del post
-	 * @param created_time, quando è stato creato il post
+	 * 
 	 */
 	public Post() {
 		this.id=null;

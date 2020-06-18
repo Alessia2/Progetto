@@ -23,7 +23,9 @@ public class Storage {
 	/**
 	 * dopo il parsing salvo l'array dei posts 
 	 * @param str, url per fare il parsing
-	 * @return post, array di post
+	 * @throws MalformedURLException
+	 * @throws IOException
+	 * @throws JSONException
 	 */
 	public static void fill_post(String str) throws MalformedURLException, IOException, JSONException {// lavora con variabili statiche
 		

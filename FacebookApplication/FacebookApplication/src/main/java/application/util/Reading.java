@@ -15,6 +15,8 @@ public class Reading {
 	 * legge il contenuto dell'url
 	 * @param url, url per fare il reading
 	 * @return String di lettura
+	 * @throws MalformedURLException
+	 * @throws IOException
 	 */
 	
 	public static String read_url(String url) throws MalformedURLException, IOException {

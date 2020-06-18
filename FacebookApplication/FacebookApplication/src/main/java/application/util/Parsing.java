@@ -20,6 +20,9 @@ public class Parsing  {
 	 * metodo di parsing per la creazione di arraylist di post
 	 * @param link, da dove otteniamo la stringa per effettuare una richiesta get per il parsing
 	 * @return arraylist di post
+	 * @throws MalformedURLException
+	 * @throws IOException
+	 * @throws JSONException
 	 */
 	public static ArrayList<Post> getPost(String link) throws MalformedURLException, IOException, JSONException {
 		String url = null;

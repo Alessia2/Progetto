@@ -21,8 +21,7 @@ public class Hashtag extends Post {
 	
 	/**
 	 * metodo che riempie l'hashmap di hashtag con il nome come chiave e qunate volte appare come valore
-	 * @param array,array di post
-	 * @return 
+	 * @return hashtag, HashMap di hashtag
 	 */
 	public static HashMap<String, Integer> count() {
 		HashMap<String,Integer> hashtag=new HashMap<>();
