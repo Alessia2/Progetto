@@ -11,7 +11,9 @@ Nel dettaglio, l'applicazione permette di:
 - [x] Filtri dei post in base alla presenza di un determinato hashtag/emoticon o entrambi
 ### Diagramma dei casi d'uso
 <img src="https://github.com/Alessia2/Progetto/blob/master/UML/NewModel%20Use%20Case%20Diagram.jpg" width="600px" height="420px">
+
 ---
+
 ## Iniziamo😊
 Innanzitutto bisogna munirsi di un account Facebook per accedere a Facebook for Developers. A questo punto è necessario generare il token di accesso, specificando tutti i permessi necessari(*per maggiori dettagli vedere la documentazione di Facebook for Developers https://developers.facebook.com/docs/graph-api/using-graph-api/*).
 Successivamente, dopo aver scaricato i software necessari per l'utilizzo (Eclipse, Postman...), bisogna clonare questo repository GitHub, tramite: "clone a repository" --> "URL:https://github.com/Alessia2/Progetto" --> "FINISH". Per poterlo poi visualizzare sul project explorer è necessario proseguire come di seguito: "file" --> "import" --> "projects from GIT" --> "next" --> "existing local repository" --> "next" --> selezionare repository --> "next" --> "finish".
