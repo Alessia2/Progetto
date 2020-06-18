@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"application.service","c":"Stats","l":"max_key()"},{"p":"application.service","c":"Stats","l":"min_key()"}]
