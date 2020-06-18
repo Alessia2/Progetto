@@ -27,7 +27,6 @@ public class Metadata {
 /** 
  * metodi getters e setters
  * 
- * 
  */
 	public String getName() {
 		return name;
