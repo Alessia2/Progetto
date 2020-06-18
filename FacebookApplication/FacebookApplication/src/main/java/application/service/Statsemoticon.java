@@ -1,5 +1,6 @@
 package application.service;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -8,10 +9,11 @@ import java.util.Vector;
 import java.util.Map.Entry;
 
 import application.model.Emoticon;
+import application.model.Metadata;
 
 
 public class Statsemoticon implements Stats {
-
+	public static ArrayList<Metadata> metadata = new ArrayList<Metadata>();
 	/**
 	 * metodo che cerca la/le emoticon più usata/e 
 	 * @return quante volte è stata usta/e
@@ -85,5 +87,16 @@ public class Statsemoticon implements Stats {
 			}
 		}
 		return "Le emoticons meno usate sono: " + key.toString() + "\nUsate: ";
+		
+	}
+	public String tot() {
+		HashMap<String, Integer> e=Emoticon.count();
+		int tot=0;
+		Collection<Integer> values = e.values();
+		Iterator<Integer> i = values.iterator();
+		while (i.hasNext()) {
+			tot += i.next();
+		}
+		return "Totale emoticon usate: "+tot;
 	}
 }

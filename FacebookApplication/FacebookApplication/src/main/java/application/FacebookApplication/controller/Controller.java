@@ -50,7 +50,7 @@ public class Controller {
 	@GetMapping("/statshash")
 	public String Statshash() {
 		Statshash s1= new Statshash();
-		return s1.max_key()+Statshash.max_hashtag()+"\n"+s1.min_key()+Statshash.min_hashtag();
+		return s1.max_key()+Statshash.max_hashtag()+"\n"+s1.min_key()+Statshash.min_hashtag()+"\n"+s1.tot();
 		
 	}
 	/**
@@ -60,7 +60,7 @@ public class Controller {
 	@GetMapping("/statsemoticons")
 	public String Statsemoticons() {
 		Statsemoticon s2= new Statsemoticon();
-		return s2.max_key()+Statsemoticon.max_emoticon()+"\n"+s2.min_key()+Statsemoticon.min_emoticon();
+		return s2.max_key()+Statsemoticon.max_emoticon()+"\n"+s2.min_key()+Statsemoticon.min_emoticon()+"\n"+s2.tot();
 	}
 	
 	/**

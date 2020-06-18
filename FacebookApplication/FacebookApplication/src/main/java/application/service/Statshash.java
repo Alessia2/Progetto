@@ -1,6 +1,7 @@
 package application.service;
 
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -12,10 +13,11 @@ import java.util.Vector;
 
 
 import application.model.Hashtag;
+import application.model.Metadata;
 
 
 public class Statshash implements Stats {
-
+	public static ArrayList<Metadata> metadata = new ArrayList<Metadata>();
 
 	/**
 	 * metodo che cerca la/gli hashtag più usato/i
@@ -92,5 +94,17 @@ public class Statshash implements Stats {
 			}
 		}
 		return "Gli hashtags meno usati sono: " + key.toString() + "\nUsati: ";
+		
+	}
+	public String tot() {
+		HashMap<String, Integer> h=Hashtag.count();
+		int tot=0;
+		Collection<Integer> values = h.values();
+		Iterator<Integer> i = values.iterator();
+		while(i.hasNext()) {
+			tot+=i.next();
+			
+		}
+		return "Totale hashtag usati: " + tot;
 	}
 }
